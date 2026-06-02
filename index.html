@@ -124,7 +124,7 @@
     .exp-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
     .exp-chip{padding:4px 12px;font-size:12px;border-radius:6px;background:rgba(108,92,231,.12);color:var(--indigo-light);border:1px solid rgba(108,92,231,.2)}
     #projects{background:var(--bg2)}
-    .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
     .project-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px;position:relative;overflow:hidden;transition:transform .35s ease,box-shadow .35s ease}
     .project-card::before{content:'';position:absolute;top:0;left:-100%;right:100%;height:2px;background:linear-gradient(90deg,var(--indigo-light),var(--pink),var(--cyan));transition:left .5s ease,right .5s ease}
     .project-card:hover::before{left:0;right:0}
@@ -317,20 +317,6 @@
       chips: ['Python','Flask','MySQL','REST APIs','HTML','CSS','JavaScript','Git','GitHub','CRUD','MVC','Database Design','bcrypt','Debugging','VS Code','MS Office'],
       experience: [
         {
-          role: 'Operations & Administrative Executive',
-          company: 'Chennai Rice Industries India Pvt. Ltd.',
-          dates: 'Jan 2026 – Present',
-          location: 'Erode, TN',
-          badge: 'Current',
-          points: [
-            'Entered loading, customer, and shop data in Excel with parallel manual registers for verification',
-            'Logged inward and outward stock movement manually and systematically, keeping both in sync',
-            'Filed physical dispatch and vehicle weighment records; maintained digital milling reports',
-            'Handled daily MIS reporting, inventory reconciliation, GST billing, and office administration',
-          ],
-          chips: ['MIS Reporting','Inventory','Excel','Data Entry','GST Billing','Logistics','Documentation','Filing Systems','Labour Management'],
-        },
-        {
           role: 'Full Stack Web Developer Intern',
           company: 'Nucaza Innovations (OPC) Pvt. Ltd.',
           dates: 'Dec 2024 – Apr 2025',
@@ -350,14 +336,16 @@
         {
           emoji: '🏋️',
           name: 'Gym Management System',
-          desc: 'Full-stack web application for managing gym memberships, workout plans, equipment booking, and secure member login with complete CRUD functionality.',
-          tags: ['Flask','MySQL','HTML/CSS','JavaScript','CRUD'],
+          desc: 'Full-stack web application for managing gym memberships, workout plans, equipment booking, and secure member login with bcrypt authentication, OTP-based password reset, and PDF report generation.',
+          tags: ['Flask','MySQL','HTML/CSS','JavaScript','bcrypt','REST APIs'],
+          link: 'https://github.com/Gowtham-vg/gym-management-system',
         },
         {
           emoji: '🌐',
-          name: 'Mini Portfolio Website',
-          desc: 'Responsive personal portfolio site built from scratch with clean design, smooth layout, and mobile-first approach.',
+          name: 'Portfolio Website',
+          desc: 'Responsive personal portfolio site built from scratch with clean design, smooth animations, and mobile-first approach.',
           tags: ['HTML','CSS','JavaScript','Responsive Design'],
+          link: 'https://github.com/Gowtham-vg/gowtham-portfolio',
         },
       ],
       education: [
@@ -382,7 +370,7 @@
         { icon: '🐙', label: 'GitHub', val: 'github.com/Gowtham-vg', href: 'https://github.com/Gowtham-vg' },
         { icon: '🟢', label: 'Status', val: 'Open to opportunities', href: null },
       ],
-      marquee: ['Chennai Rice Industries','Nucaza Innovations','Python Developer','Flask','MySQL','REST APIs','MCA Graduate','Backend Engineer'],
+      marquee: ['Nucaza Innovations','Python Developer','Flask','MySQL','REST APIs','MCA Graduate','Backend Developer','Full Stack','Open to Work'],
     };
 
     window.addEventListener('load', () => {
@@ -443,6 +431,7 @@
           <div class="project-name">${p.name}</div>
           <p class="project-desc">${p.desc}</p>
           <div class="project-tags">${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}</div>
+          ${p.link ? `<a href="${p.link}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:6px;margin-top:18px;font-size:13px;font-weight:500;color:var(--cyan);border:1px solid rgba(0,212,255,.25);padding:7px 16px;border-radius:6px;transition:background .2s,border-color .2s;text-decoration:none" onmouseover="this.style.background='rgba(0,212,255,.08)';this.style.borderColor='rgba(0,212,255,.5)'" onmouseout="this.style.background='transparent';this.style.borderColor='rgba(0,212,255,.25)'">🐙 View on GitHub</a>` : ''}
         </div>`).join('');
     }
 

@@ -10,8 +10,7 @@ Personal portfolio built with vanilla HTML, CSS, and JavaScript. No frameworks, 
 
 I'm Gowtham B, a Full Stack Web Developer from Tamil Nadu with an MCA (CGPA 8.52). I build backend-focused web applications using Python, Flask, and MySQL — with a track record of integrating third-party APIs, building RBAC systems, and shipping real production features.
 
-Currently open to full stack and backend developer roles in Chennai.
-
+Currently open to full stack, software and backend developer roles.
 ---
 
 ## Tech Stack

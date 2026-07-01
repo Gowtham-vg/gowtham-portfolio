@@ -48,7 +48,7 @@ AI-powered customer support ticket system with role-based access control (Custom
 
 **Stack:** Python, Flask, MySQL, OpenAI API, Bootstrap 5, Chart.js, ReportLab
 
-[View Repo →](https://github.com/Gowtham-vg/SupportAI)
+[View Repo →](https://github.com/Gowtham-vg/ai-support-ticket-system)
 
 ---
 
